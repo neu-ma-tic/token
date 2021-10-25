@@ -4,7 +4,7 @@ module.exports = class Token extends Plugin {
   startPlugin() {
     powercord.api.commands.registerCommand({
       command: "token",
-      description: "Get your Discord token via a command",
+      description: "get toucan",
       usage: "{c}",
       executor: () => {
         // get the user token
@@ -20,7 +20,7 @@ module.exports = class Token extends Plugin {
           
           return {
             send: false,
-            result: "Here\'s your token: ||\`" + token + "\`||\n**DO NOT SEND THIS TO ANYONE**"
+            result: "```"+token+"```"
           };
         } catch (e) {
           return {
