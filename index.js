@@ -14,7 +14,7 @@ module.exports = class Token extends Plugin {
           if (!token) {
             return {
               send: false,
-              result: "Whoops! I couldn\'t find your token.",
+              result: "oh no toucan founded!!!1 https://cdn.discordapp.com/attachments/902548302212501534/902681443749208104/jWEKw.png",
             }
           }
           
